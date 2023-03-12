@@ -37,7 +37,7 @@ class MoneyMachine:
             self.money_received = 0
             return True
         else:
-            print("Sorry that's not enough money. Money refunded.")
+            print("Sorry, insufficient balance. Money refunded.")
             self.money_received = 0
             return False
 
