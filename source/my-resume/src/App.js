@@ -1,11 +1,13 @@
-import { Container, Grid } from '@mui/material';
 import React from 'react';
+import { Container, Grid } from '@mui/material';
 
 import Profile from './components/Profile/Profile';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Portfolio from './pages/Portfolio/Portfolio';
 import Resume from './pages/Resume/Resume';
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import './App.css';
 
@@ -19,8 +21,15 @@ function App() {
         </Grid>
         <Grid item xs>
           <Header />
-          <Portfolio />
-          <Resume />
+          <Router>
+            <Routes>
+              <Route path = '/portfolio' element={<Portfolio />}/>
+              
+              <Route path = '/' element={<Resume />} />
+                {/* <Resume />
+              </Route> */}
+            </Routes>
+          </Router>
           <Footer />
         </Grid>
       </Grid>
