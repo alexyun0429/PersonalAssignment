@@ -10,7 +10,7 @@ try:
     connection.ehlo()
     connection.starttls()
     connection.login(user=my_gmail, password=password)
-    connection.sendmail(from_addr=my_gmail, to_addrs="seunghyun1118@gmail.com", msg="FUck YoU")
+    connection.sendmail(from_addr=my_gmail, to_addrs="pythontry0429@yahoo.com", msg="FUck YoU")
     connection.close()
 except:
     print
