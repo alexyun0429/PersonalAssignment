@@ -29,12 +29,15 @@ const CustomTimeline = ({ title, icon, children }) => {
           </Typography>
         </TimelineContent>
       </TimelineItem>
-
       {children}
-      <TimelineItem>
+      {/* <TimelineItem>
         <CustomTimelineSeparator />
         <TimelineContent>Code</TimelineContent>
       </TimelineItem>
+      <TimelineItem>
+        <CustomTimelineSeparator />
+        <TimelineContent>Code</TimelineContent>
+      </TimelineItem> */}
     </Timeline>
     
   );
