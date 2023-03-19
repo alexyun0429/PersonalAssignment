@@ -14,14 +14,14 @@ const CustomTimelineItem = ({ title, text, link }) => {
       <CustomTimelineSeparator />
       <TimelineContent className='timeline_content'>
         {link ? 
-          (<Typography className='timeline_text'>
+          (<Typography className='timelineItem_text'>
             <span>{title}</span>{" "}
             <a href={link} target='_black'>
               {text}
             </a>
           </Typography>
         ) : (
-          <Typography className='timeline_text'>
+          <Typography className='timelineItem_text'>
             <span>{title}</span>{text}
           </Typography>
         )}
@@ -47,11 +47,11 @@ const Profile = () => {
           <CustomTimelineItem title='Name: ' text={resumeData.name} />
           <CustomTimelineItem title='DOB: ' text={resumeData.DOB} />
           <CustomTimelineItem title='Occupation: ' text={resumeData.occupation} />
-          <CustomTimelineItem text={resumeData.email} />
+          <CustomTimelineItem title='Email: ' text={resumeData.email} />
           
           {/* Mapping to object */}
           {Object.keys(resumeData.social).map(key => (
-            <CustomTimelineItem text={resumeData.social[key].text} link={resumeData.social[key].link} />
+            <CustomTimelineItem title='Click to ' text={resumeData.social[key].text} link={resumeData.social[key].link} />
           ))}
         </CustomTimeline>
         <br/>
