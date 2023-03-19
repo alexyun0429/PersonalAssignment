@@ -1,5 +1,4 @@
 import React from "react";
-import { GitHub, LinkedIn } from "@mui/icons-material";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
@@ -9,16 +8,17 @@ export default {
     DOB: '29th April 1999',
     occupation: 'Student',
     email: 'alexyun0429@gmail.com',
-    
     social: {
         LinkedIn: {
+            title: 'LinkedIn: ',
             link: 'https://www.linkedin.com/in/jaewon-yun-308ab9239',
-            text: "LinkedIn",
+            text: "MyLinkedIn",
             icon: <LinkedInIcon />
         }, 
         GitHub: {
+            title: 'GitHub: ',
             link: 'https://github.com/alexyun0429',
-            text: "GitHub",
+            text: "MyGitHub",
             icon: <GitHubIcon /> 
         }
     }

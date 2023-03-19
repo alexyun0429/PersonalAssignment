@@ -43,10 +43,11 @@
     margin-bottom: 12px;
 }
 
-.timelineItem_text {
-    font-size: 14px;
+/* Timeline */
+
+.timelineItem_text {  
     color: #787878;
-    font-weight: 400;
+    font-size: 12px;
 }
 
 .timelineItem_text > a{

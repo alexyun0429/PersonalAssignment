@@ -47,11 +47,11 @@ const Profile = () => {
           <CustomTimelineItem title='Name: ' text={resumeData.name} />
           <CustomTimelineItem title='DOB: ' text={resumeData.DOB} />
           <CustomTimelineItem title='Occupation: ' text={resumeData.occupation} />
-          <CustomTimelineItem title='Email: ' text={resumeData.email} />
+          <CustomTimelineItem text={resumeData.email} />
           
           {/* Mapping to object */}
           {Object.keys(resumeData.social).map(key => (
-            <CustomTimelineItem title='Click to ' text={resumeData.social[key].text} link={resumeData.social[key].link} />
+            <CustomTimelineItem title={resumeData.social[key].title} text={resumeData.social[key].text} link={resumeData.social[key].link} />
           ))}
         </CustomTimeline>
         <br/>
@@ -60,9 +60,5 @@ const Profile = () => {
     </div>
   )
 } 
-{/* <TimelineItem>
-<CustomTimelineSeparator />
-<TimelineContent>Code</TimelineContent>
-</TimelineItem> */}
 
 export default Profile;
