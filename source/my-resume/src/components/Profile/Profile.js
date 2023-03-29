@@ -2,10 +2,12 @@ import React from 'react'
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import { TimelineContent, TimelineItem } from '@mui/lab';
 import { Typography } from '@mui/material';
+import GetAppIcon from '@mui/icons-material/GetApp';
 
 import CustomTimeline, { CustomTimelineSeparator } from '../Timeline/Timeline';
 import resumeData from '../../utils/resumeData';
 import './Profile.css';
+import CustomButton from '../Button/Button';
 
 
 const CustomTimelineItem = ({ title, text, link }) => {
@@ -55,7 +57,12 @@ const Profile = () => {
           ))}
         </CustomTimeline>
         <br/>
-        <button>Submit</button>
+
+        <div className='btn_container'>
+          <CustomButton text={'Download CV'} icon={<GetAppIcon />} />
+          {/* >Download CV {<GetAppIcon />}</CustomButtons> */}
+        </div>
+       
       </div>
     </div>
   )
