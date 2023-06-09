@@ -30,11 +30,11 @@
                     <input type="email" name="email" class="form-control" id="InputForEmail" value="<?= set_value('email') ?>">
                 </div>
                 <div class="mb-3">
-                    <label for="InputForPhone" class="form-label">Phone Number</label><small><b>Ensure type in your country code.</b></small>
+                    <label for="InputForPhone" class="form-label">Phone Number</label><small><b> "Ensure type in your country code."</b></small>
                     <input type="phone" name="phone" class="form-control" id="InputForPhone" value="<?= set_value('phone') ?>">
                 </div>
                 <div class="mb-3">
-                    <label for="InputForPassword" class="form-label">Password</label>
+                    <label for="InputForPassword" class="form-label">Password</label><small><b> "Ensure password longer than 7 characters, using number and alphabet."</b></small>
                     <input type="password" name="password" class="form-control" id="InputForPassword" value="<?= set_value('password') ?>">
                 </div>
                 <div class="mb-3">

@@ -62,7 +62,7 @@ class Register extends BaseController
                 $phone = $this->request->getPost('phone');
 
                 $sid = "AC5795257afe682a6fd56ae4e462b0bdbb";
-                $token = "1d4cffc79beed05f888faa2cf50edd5c";
+                $token = "c9039a026d2758bcdafc5c7f4556b96a";
                 $twilio = new \Twilio\Rest\Client($sid, $token);
 
                 $message = $twilio->messages
